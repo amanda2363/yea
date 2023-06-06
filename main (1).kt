@@ -1,12 +1,7 @@
-fun main(args: Array<String>) {
-  var nomeVariavel: Boolean = false
-  println(nomeVariavel)
-  var x: Boolean = true
-  println(x)
+fun minhaFuncao() {
+  println("minha função escreve na tela")
+}
 
-  if (x) {
-    println("verdadeiro")
-  } else {
-    println("falso")
-  }
+fun main(args: Array<String>) {
+  minhaFuncao()
 }
