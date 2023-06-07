@@ -1,20 +1,31 @@
-  fun main() {
-    println("Olá Mundo")
-    var nome = "Amanda"
-    val nascimento = 2006
+fun meuNome(nome: String) {
+  println("Seu nome é: " + nome)
+}
 
-    println(nome)   // exibe o nome
-    println(nascimento)  //exibe o nascimento
+fun veroufalso(x: Boolean) {
+  println(x)
+}
 
-  val myDoubleNum = 5.99    // Double
-  val myLetter = 'D'        // Char
-  val myBoolean = false      // Boolean
-  val myText = "Olá"      // String
+fun seramaior(y: Int) {
+  if (y >= 18) {
+    println("É maior de idade: " + y)
+  } else {
+    println("É menor de idade: " + y)
+  }
+}
 
-  println (myNum)
-  println (myDoubleNum)
-  println (myLetter)
-  println (myBoolean)
-  println (myText)
-  
+fun soma(a: Int, b: Int): Int {
+  return (a + b)
+}
+
+fun main() {
+  meuNome("Amanda")
+  veroufalso(true)
+  veroufalso(false)
+
+  seramaior(15)
+  seramaior(19)
+
+  var resultado = soma(3, 5)
+  println(resultado)
 }
